@@ -264,7 +264,23 @@ const testimonialsCarousel = document.querySelector('.testimonials-carousel');
 if (testimonialsCarousel) {
     testimonialsCarousel.addEventListener('mouseenter', stopTestimonialAutoPlay);
     testimonialsCarousel.addEventListener('mouseleave', startTestimonialAutoPlay);
+    testimonialsCarousel.addEventListener('touchstart', stopTestimonialAutoPlay, { passive: true });
+    testimonialsCarousel.addEventListener('touchend', startTestimonialAutoPlay, { passive: true });
     startTestimonialAutoPlay();
+}
+
+// Sync currentTestimonial on manual scroll
+if (testimonialsContainer) {
+    testimonialsContainer.addEventListener('scroll', () => {
+        if (!testimonialCards.length) return;
+        const cardWidth = testimonialCards[0].offsetWidth;
+        const gap = 32; // 2rem gap
+        const index = Math.round(testimonialsContainer.scrollLeft / (cardWidth + gap));
+
+        // Update currentTestimonial if manually scrolled significantly
+        // This ensures next auto-scroll happens from the correct position
+        currentTestimonial = index;
+    }, { passive: true });
 }
 
 // Reset testimonial position on resize
