@@ -184,7 +184,7 @@ const statsObserver = new IntersectionObserver((entries) => {
             statsAnimated = true;
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 0.1 });
 
 if (statsSection) {
     statsObserver.observe(statsSection);

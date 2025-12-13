@@ -640,7 +640,7 @@ section {
     box-shadow: var(--shadow-md);
 }
 
-.about-details-grid::after {
+/* .about-details-grid::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -649,7 +649,7 @@ section {
     width: 1px;
     background: var(--border-color);
     transform: translateX(-50%);
-}
+} */
 
 .stats-grid {
     display: grid;
@@ -1662,7 +1662,8 @@ section {
     }
 
     .stats-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .about-features {
