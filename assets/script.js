@@ -69,8 +69,10 @@ function setActiveLink() {
         const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            if (navLink) navLink.classList.add('active');
+            if (navLink) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                navLink.classList.add('active');
+            }
         }
     });
 }
@@ -129,26 +131,35 @@ function stopAutoPlay() {
 }
 
 // Event listeners
-prevBtn.addEventListener('click', () => {
-    prevSlide();
-    stopAutoPlay();
-    startAutoPlay();
-});
+if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoPlay();
+        startAutoPlay();
+    });
+}
 
-nextBtn.addEventListener('click', () => {
-    nextSlide();
-    stopAutoPlay();
-    startAutoPlay();
-});
+if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoPlay();
+        startAutoPlay();
+    });
+}
+
 
 // Pause on hover
 const carouselContainer = document.querySelector('.carousel-container');
-carouselContainer.addEventListener('mouseenter', stopAutoPlay);
-carouselContainer.addEventListener('mouseleave', startAutoPlay);
+if (carouselContainer) {
+    carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+    carouselContainer.addEventListener('mouseleave', startAutoPlay);
+}
 
 // Initialize carousel
-createIndicators();
-startAutoPlay();
+if (indicatorsContainer && slides.length > 0) {
+    createIndicators();
+    startAutoPlay();
+}
 
 // ===== ANIMATED STATISTICS =====
 const statNumbers = document.querySelectorAll('.stat-number');
@@ -370,14 +381,16 @@ let touchEndX = 0;
 
 const heroCarousel = document.querySelector('.hero-carousel');
 
-heroCarousel.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-}, { passive: true });
+if (heroCarousel) {
+    heroCarousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
 
-heroCarousel.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-}, { passive: true });
+    heroCarousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+}
 
 function handleSwipe() {
     if (touchEndX < touchStartX - 50) {

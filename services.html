@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Premium Healthcare</title>
+    <meta name="description"
+        content="Explore our comprehensive healthcare services including cardiology, neurology, orthopedics, and more.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="window.location.href='index.html'">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare<span class="logo-plus">+</span></span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link active">Services</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-primary hidden-mobile" onclick="window.location.href='contact.html'">Book
+                        Appointment</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Services</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> Services
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="services" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Comprehensive Healthcare Solutions</h2>
+                <p class="section-description">We offer a wide range of medical services tailored to meet your
+                    individual needs with state-of-the-art technology and expert care.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="service-title">Cardiology</h3>
+                    <p class="service-description">Expert cardiac care with advanced diagnostic and treatment options
+                        including ECG, echocardiography, and cardiac rehabilitation.</p>
+                    <a href="#cardiology" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">Neurology</h3>
+                    <p class="service-description">Specialized neurological care for brain and nervous system
+                        conditions, offering comprehensive diagnosis and management.</p>
+                    <a href="#neurology" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3 class="service-title">Orthopedics</h3>
+                    <p class="service-description">Comprehensive bone, joint, and muscle treatment solutions, from
+                        sports medicine to joint replacement surgeries.</p>
+                    <a href="#orthopedics" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="service-title">Pediatrics</h3>
+                    <p class="service-description">Gentle, compassionate care for infants, children, and adolescents,
+                        ensuring their healthy growth and development.</p>
+                    <a href="#pediatrics" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="service-title">General Medicine</h3>
+                    <p class="service-description">Primary care services for overall health and wellness, including
+                        check-ups, vaccinations, and preventive care.</p>
+                    <a href="#general-medicine" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3 class="service-title">Emergency Care</h3>
+                    <p class="service-description">24/7 emergency services with rapid response capabilities and a fully
+                        equipped trauma center.</p>
+                    <a href="#emergency-care" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-details-container">
+                <!-- Cardiology -->
+                <div id="cardiology" class="service-detail-section">
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-heartbeat"></i> Cardiology</h3>
+                        <p class="service-detail-description">
+                            Our Cardiology department provides world-class heart care with a team of experienced
+                            cardiologists and state-of-the-art technology. We focus on the prevention, diagnosis, and
+                            treatment of cardiovascular diseases. From routine check-ups to complex interventions, your
+                            heart health is in safe hands.
+                        </p>
+                        <div class="service-procedures">
+                            <h4>Key Procedures</h4>
+                            <ul class="procedures-list">
+                                <li>Electrocardiogram (ECG)</li>
+                                <li>Echocardiography</li>
+                                <li>Cardiac Catheterization</li>
+                                <li>Angioplasty & Stenting</li>
+                                <li>Heart Rhythm Management</li>
+                                <li>Pacemaker Implantation</li>
+                                <li>Cardiac Rehabilitation</li>
+                                <li>Stress Testing</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <img src="assets/slide/slide1.png" alt="Cardiology Department">
+                    </div>
+                </div>
+
+                <!-- Neurology -->
+                <div id="neurology" class="service-detail-section reverse">
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-brain"></i> Neurology</h3>
+                        <p class="service-detail-description">
+                            The Neurology department is dedicated to the diagnosis and management of disorders of the
+                            nervous system. We utilize advanced imaging and diagnostic tools to treat conditions
+                            affecting the brain, spinal cord, nerves, and muscles. Our multidisciplinary approach
+                            ensures comprehensive care for every patient.
+                        </p>
+                        <div class="service-procedures">
+                            <h4>Key Procedures</h4>
+                            <ul class="procedures-list">
+                                <li>EEG & EMG Studies</li>
+                                <li>MRI & CT Scans</li>
+                                <li>Stroke Management</li>
+                                <li>Epilepsy Treatment</li>
+                                <li>Headache treatment</li>
+                                <li>Neuro-Rehabilitation</li>
+                                <li>Sleep Studies</li>
+                                <li>Movement Disorder Therapy</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <img src="assets/slide/slide2.png" alt="Neurology Department">
+                    </div>
+                </div>
+
+                <!-- Orthopedics -->
+                <div id="orthopedics" class="service-detail-section">
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-bone"></i> Orthopedics</h3>
+                        <p class="service-detail-description">
+                            Our Orthopedic department specializes in the treatment of musculoskeletal conditions.
+                            Whether it's a sports injury, joint pain, or specialized surgery, our experts help you
+                            regain mobility and quality of life. We offer both surgical and non-surgical treatment
+                            options tailored to your specific needs.
+                        </p>
+                        <div class="service-procedures">
+                            <h4>Key Procedures</h4>
+                            <ul class="procedures-list">
+                                <li>Joint Replacement (Knee/Hip)</li>
+                                <li>Arthroscopic Surgery</li>
+                                <li>Fracture Management</li>
+                                <li>Sports Medicine</li>
+                                <li>Spine Surgery</li>
+                                <li>Physical Therapy</li>
+                                <li>Osteoporosis Management</li>
+                                <li>Ligament Repair</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <img src="assets/slide/slide3.png" alt="Orthopedics Department">
+                    </div>
+                </div>
+
+                <!-- Pediatrics -->
+                <div id="pediatrics" class="service-detail-section reverse">
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-baby"></i> Pediatrics</h3>
+                        <p class="service-detail-description">
+                            We provide tender, loving care for your little ones. Our Pediatrics department covers all
+                            aspects of child health from infancy through adolescence. We serve as a partner to parents
+                            in ensuring the healthy growth, development, and well-being of their children in a
+                            child-friendly environment.
+                        </p>
+                        <div class="service-procedures">
+                            <h4>Key Procedures</h4>
+                            <ul class="procedures-list">
+                                <li>Newborn Care</li>
+                                <li>Vaccinations & Immunizations</li>
+                                <li>Growth Monitoring</li>
+                                <li>Developmental Assessment</li>
+                                <li>Pediatric Critical Care</li>
+                                <li>Nutrition Counseling</li>
+                                <li>Allergy Management</li>
+                                <li>Adolescent Medicine</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <div class="service-image-placeholder">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Medicine -->
+                <div id="general-medicine" class="service-detail-section">
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-user-md"></i> General Medicine</h3>
+                        <p class="service-detail-description">
+                            Our General Medicine department serves as the first point of contact for your healthcare
+                            needs. We focus on overall health maintenance, disease prevention, and the management of
+                            chronic conditions. Our physicians provide holistic care to adult patients of all ages.
+                        </p>
+                        <div class="service-procedures">
+                            <h4>Key Procedures</h4>
+                            <ul class="procedures-list">
+                                <li>Routine Health Check-ups</li>
+                                <li>Chronic Disease Management</li>
+                                <li>Diabetes & Hypertension Care</li>
+                                <li>Infectious Disease Tretment</li>
+                                <li>Geriatric Care</li>
+                                <li>Preventive Screenings</li>
+                                <li>Lifestyle Counseling</li>
+                                <li>Pre-operative Assessment</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <div class="service-image-placeholder">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Care -->
+                <div id="emergency-care" class="service-detail-section reverse">
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-ambulance"></i> Emergency Care</h3>
+                        <p class="service-detail-description">
+                            Our Emergency Department is open 24/7 to handle any medical crisis. Equipped with advanced
+                            life-saving technology and staffed by trauma specialists, we ensure rapid triage and
+                            immediate care for critical conditions when every second counts.
+                        </p>
+                        <div class="service-procedures">
+                            <h4>Key Procedures</h4>
+                            <ul class="procedures-list">
+                                <li>Trauma & Accident Care</li>
+                                <li>Cardiac Emergencies</li>
+                                <li>Stroke Management (Code Stroke)</li>
+                                <li>Acute Pain Management</li>
+                                <li>Resuscitation Services</li>
+                                <li>Emergency Surgery</li>
+                                <li>Poisoning Management</li>
+                                <li>Critical Care Transport</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Emergency Contact</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <div class="service-image-placeholder">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Need Specialist Care?</h2>
+                <p class="cta-description">Our expert doctors are ready to provide you with the best medical treatment.
+                </p>
+                <button class="btn btn-light btn-lg" onclick="window.location.href='doctors.html'">Find a
+                    Doctor</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare<span class="logo-plus">+</span></span>
+                    </div>
+                    <p>Providing exceptional healthcare services with compassion, expertise, and state-of-the-art
+                        technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
+                        <li><a href="services.html">Pediatrics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> contact@medicare.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, NY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/1234567890" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-text">WhatsApp</span>
+        </a>
+        <a href="tel:+1234567890" class="floating-btn phone" aria-label="Call">
+            <i class="fas fa-phone"></i>
+            <span class="btn-text">Call Us</span>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

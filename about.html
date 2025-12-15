@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Premium Healthcare</title>
+    <meta name="description"
+        content="Learn about our history, mission, and the expert team dedicated to your health and well-being.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="window.location.href='index.html'">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare<span class="logo-plus">+</span></span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link active">About</a></li>
+                        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-primary hidden-mobile" onclick="window.location.href='contact.html'">Book
+                        Appointment</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">About Us</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> About Us
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about" id="about" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text-full">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">Leading Healthcare Provider</h2>
+                    <p class="about-description">With over 25 years of excellence in healthcare, we've been serving our
+                        community with dedication, compassion, and cutting-edge medical expertise. Our mission is to
+                        provide accessible, high-quality healthcare services that improve lives. We believe in a
+                        patient-centric approach where your comfort and recovery are our top priorities.</p>
+                </div>
+
+                <div class="about-details-grid">
+                    <div class="about-left-column">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="25">0</h3>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="150">0</h3>
+                                <p class="stat-label">Expert Doctors</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="50000">0</h3>
+                                <p class="stat-label">Happy Patients</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="98">0</h3>
+                                <p class="stat-label">Success Rate %</p>
+                            </div>
+                        </div>
+
+                        <div class="about-extra-card">
+                            <div class="extra-content">
+                                <h3>Need Immediate Help?</h3>
+                                <p>Our emergency team is available 24/7 to assist you. Don't hesitate to reach out for
+                                    urgent medical attention.</p>
+                                <a href="contact.html" class="btn btn-primary btn-sm">Contact Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Winning</h4>
+                            <p>Recognized for excellence in patient care and medical innovation</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Safe & Secure</h4>
+                            <p>Advanced safety protocols and infection control measures</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>24/7 Available</h4>
+                            <p>Round-the-clock emergency and support services</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-microscope"></i>
+                            <h4>Modern Technology</h4>
+                            <p>State-of-the-art equipment for accurate diagnosis and treatment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section (Extra for About Page) -->
+    <!-- Extended About Sections -->
+    <section class="about-extra-sections">
+        <div class="container">
+            <!-- Achievements -->
+            <div class="about-section-block">
+                <h3>Our Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Best Hospital 2023</h4>
+                        <p>Awarded for excellence in patient care and safety standards.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>JCI Accredited</h4>
+                        <p>Gold seal of approval from Joint Commission International.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>5-Star Rating</h4>
+                        <p>Consistently rated 5 stars by patients for quality service.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Research Excellence</h4>
+                        <p>Recognized for breakthrough medical research and innovation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Management Team -->
+            <div class="about-section-block">
+                <h3>Management Team</h3>
+                <div class="management-grid">
+                    <div class="management-card">
+                        <div class="management-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="management-info">
+                            <h4>Dr. David Smith</h4>
+                            <p class="role">Chief Medical Officer</p>
+                            <p>Leading our medical strategy with 20+ years of experience.</p>
+                        </div>
+                    </div>
+                    <div class="management-card">
+                        <div class="management-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="management-info">
+                            <h4>Ms. Sarah Johnson</h4>
+                            <p class="role">Hospital Administrator</p>
+                            <p>Ensuring efficient operations and patient satisfaction.</p>
+                        </div>
+                    </div>
+                    <div class="management-card">
+                        <div class="management-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="management-info">
+                            <h4>Mr. James Brown</h4>
+                            <p class="role">Head of Finance</p>
+                            <p>Managing financial resources for sustainable growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infrastructure -->
+            <div class="about-section-block">
+                <h3>Our Infrastructure</h3>
+                <div class="infra-grid">
+                    <div class="infra-item">
+                        <img src="assets/slide/slide3.png" alt="Modern Patient Wards" class="infra-image">
+                        <div class="infra-overlay">
+                            <h4>Modern Patient Wards</h4>
+                            <p>Designed for comfort and recovery.</p>
+                        </div>
+                    </div>
+                    <div class="infra-item">
+                        <img src="assets/slide/slide1.png" alt="Advanced OT Complex" class="infra-image">
+                        <div class="infra-overlay">
+                            <h4>Advanced OT Complex</h4>
+                            <p>State-of-the-art surgical facilities.</p>
+                        </div>
+                    </div>
+                    <div class="infra-item">
+                        <div class="infra-placeholder">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="infra-overlay">
+                            <h4>Diagnostic Labs</h4>
+                            <p>24/7 automated pathology services.</p>
+                        </div>
+                    </div>
+                    <div class="infra-item">
+                        <img src="assets/slide/slide2.png" alt="Imaging Center" class="infra-image">
+                        <div class="infra-overlay">
+                            <h4>Imaging Center</h4>
+                            <p>Latest MRI and CT scan technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="cta-content" style="color: var(--text-primary); text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Our Vision</h2>
+                <p class="section-description" style="max-width: 800px; margin: 0 auto 2rem;">To be the most trusted
+                    healthcare partner for our community, delivering world-class medical care with a human touch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare<span class="logo-plus">+</span></span>
+                    </div>
+                    <p>Providing exceptional healthcare services with compassion, expertise, and state-of-the-art
+                        technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
+                        <li><a href="services.html">Pediatrics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> contact@medicare.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, NY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/1234567890" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-text">WhatsApp</span>
+        </a>
+        <a href="tel:+1234567890" class="floating-btn phone" aria-label="Call">
+            <i class="fas fa-phone"></i>
+            <span class="btn-text">Call Us</span>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Premium Healthcare</title>
+    <meta name="description" content="Get in touch with us for appointments, inquiries, or emergency services.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="window.location.href='index.html'">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare<span class="logo-plus">+</span></span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-primary hidden-mobile" onclick="window.location.href='contact.html'">Book
+                        Appointment</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> Contact
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact" id="contact" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We're here to help. Reach out to us through any of the following channels or fill
+                        out the form.</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@medicare.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Healthcare Ave, Medical District, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional extra for Contact page) -->
+    <section class="map-section" style="padding-bottom: 0; padding-top: 0;">
+        <div
+            style="width: 100%; height: 400px; background-color: #e5e7eb; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+            <p><i class="fas fa-map-marked-alt fa-2x"></i><br>Map Integration Placeholder</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare<span class="logo-plus">+</span></span>
+                    </div>
+                    <p>Providing exceptional healthcare services with compassion, expertise, and state-of-the-art
+                        technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
+                        <li><a href="services.html">Pediatrics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> contact@medicare.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, NY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/1234567890" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-text">WhatsApp</span>
+        </a>
+        <a href="tel:+1234567890" class="floating-btn phone" aria-label="Call">
+            <i class="fas fa-phone"></i>
+            <span class="btn-text">Call Us</span>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

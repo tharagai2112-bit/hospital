@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Premium Healthcare</title>
+    <meta name="description"
+        content="Meet our team of expert doctors and specialists dedicated to providing the best medical care.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="window.location.href='index.html'">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>MediCare<span class="logo-plus">+</span></span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="doctors.html" class="nav-link active">Doctors</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-primary hidden-mobile" onclick="window.location.href='contact.html'">Book
+                        Appointment</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Expert Doctors</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> Doctors
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Content -->
+    <section class="doctors" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Team</span>
+                <h2 class="section-title">Meet Our Medical Specialists</h2>
+                <p class="section-description">Dedicated professionals committed to providing the best medical care for
+                    you and your family. Our team consists of highly qualified and experienced doctors.</p>
+            </div>
+
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="assets/doctors/doctor1.png" alt="Dr. James Wilson" loading="lazy">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. James Wilson</h3>
+                        <p class="doctor-specialty">Cardiology Specialist</p>
+                        <a href="#dr-wilson" class="btn-text">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="assets/doctors/doctor2.png" alt="Dr. Sarah Thompson" loading="lazy">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Sarah Thompson</h3>
+                        <p class="doctor-specialty">Neurology Expert</p>
+                        <a href="#dr-thompson" class="btn-text">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="assets/doctors/doctor3.png" alt="Dr. Michael Chen" loading="lazy">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Michael Chen</h3>
+                        <p class="doctor-specialty">Orthopedic Surgeon</p>
+                        <a href="#dr-chen" class="btn-text">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="assets/doctors/doctor4.png" alt="Dr. Emily White" loading="lazy">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Emily White</h3>
+                        <p class="doctor-specialty">Pediatrician</p>
+                        <a href="#dr-white" class="btn-text">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="assets/doctors/doctor5.png" alt="Dr. Robert Lee" loading="lazy">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Robert Lee</h3>
+                        <p class="doctor-specialty">Oncology Specialist</p>
+                        <a href="#dr-lee" class="btn-text">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="assets/doctors/doctor6.png" alt="Dr. Amanda Davis" loading="lazy">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Amanda Davis</h3>
+                        <p class="doctor-specialty">Dermatologist</p>
+                        <a href="#dr-davis" class="btn-text">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doctor-details-container">
+                <!-- Dr. Wilson -->
+                <div id="dr-wilson" class="doctor-detail-section">
+                    <div class="doctor-profile-card">
+                        <img src="assets/doctors/doctor1.png" alt="Dr. James Wilson" class="doctor-profile-image">
+                        <div class="doctor-profile-info">
+                            <h3>Dr. James Wilson</h3>
+                            <span class="specialty">Cardiology Specialist</span>
+                            <div class="doctor-social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-full-info">
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-user-md"></i> Biography</h4>
+                            <p>Dr. James Wilson is a renowned cardiologist with over 15 years of experience in
+                                interventional cardiology. He is dedicated to providing personalized care to patients
+                                with heart conditions, utilizing the latest diagnostic and treatment techniques. Dr.
+                                Wilson is known for his compassionate approach and commitment to patient education.</p>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>MD, Harvard Medical School</li>
+                                <li>Residency in Internal Medicine, Johns Hopkins Hospital</li>
+                                <li>Fellowship in Cardiovascular Disease, Mayo Clinic</li>
+                                <li>Board Certified in Cardiovascular Disease</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>Coronary Artery Disease</li>
+                                <li>Heart Failure Management</li>
+                                <li>Valvular Heart Disease</li>
+                                <li>Preventive Cardiology</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Thompson -->
+                <div id="dr-thompson" class="doctor-detail-section">
+                    <div class="doctor-profile-card">
+                        <img src="assets/doctors/doctor2.png" alt="Dr. Sarah Thompson" class="doctor-profile-image">
+                        <div class="doctor-profile-info">
+                            <h3>Dr. Sarah Thompson</h3>
+                            <span class="specialty">Neurology Expert</span>
+                            <div class="doctor-social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-full-info">
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-user-md"></i> Biography</h4>
+                            <p>Dr. Sarah Thompson is a board-certified neurologist specializing in the diagnosis and
+                                management of complex neurological disorders. With a focus on patient-centered care, she
+                                combines clinical expertise with advanced technology to deliver the best possible
+                                outcomes. She has a particular interest in stroke prevention and epilepsy management.
+                            </p>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>MD, Stanford University School of Medicine</li>
+                                <li>Neurology Residency, UCSF Medical Center</li>
+                                <li>Fellowship in Clinical Neurophysiology</li>
+                                <li>Member, American Academy of Neurology</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>Stroke & Cerebrovascular Disease</li>
+                                <li>Epilepsy & Seizures</li>
+                                <li>Multiple Sclerosis</li>
+                                <li>Headache & Migraine Disorders</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Chen -->
+                <div id="dr-chen" class="doctor-detail-section">
+                    <div class="doctor-profile-card">
+                        <img src="assets/doctors/doctor3.png" alt="Dr. Michael Chen" class="doctor-profile-image">
+                        <div class="doctor-profile-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <span class="specialty">Orthopedic Surgeon</span>
+                            <div class="doctor-social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-full-info">
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-user-md"></i> Biography</h4>
+                            <p>Dr. Michael Chen is a highly skilled orthopedic surgeon with expertise in sports medicine
+                                and joint replacement surgery. He has treated numerous professional athletes and is
+                                passionate about helping patients of all activity levels return to their active
+                                lifestyles. Dr. Chen utilizes minimally invasive techniques to ensure faster recovery.
+                            </p>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>MD, Columbia University Vagelos College of Physicians</li>
+                                <li>Orthopedic Surgery Residency, Hospital for Special Surgery</li>
+                                <li>Fellowship in Sports Medicine</li>
+                                <li>Board Certified in Orthopedic Surgery</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>Arthroscopic Knee & Shoulder Surgery</li>
+                                <li>Total Joint Replacement</li>
+                                <li>Sports Injuries</li>
+                                <li>Fracture Care</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. White -->
+                <div id="dr-white" class="doctor-detail-section">
+                    <div class="doctor-profile-card">
+                        <img src="assets/doctors/doctor4.png" alt="Dr. Emily White" class="doctor-profile-image">
+                        <div class="doctor-profile-info">
+                            <h3>Dr. Emily White</h3>
+                            <span class="specialty">Pediatrician</span>
+                            <div class="doctor-social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-full-info">
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-user-md"></i> Biography</h4>
+                            <p>Dr. Emily White is a compassionate pediatrician dedicated to the health and well-being of
+                                children from infancy through adolescence. She believes in building long-term
+                                relationships with families and providing comprehensive care that addresses physical,
+                                emotional, and developmental needs.</p>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>MD, University of Pennsylvania Perelman School of Medicine</li>
+                                <li>Pediatrics Residency, Children's Hospital of Philadelphia</li>
+                                <li>Fellowship in Adolescent Medicine</li>
+                                <li>Fellow, American Academy of Pediatrics</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>Newborn & Infant Care</li>
+                                <li>Adolescent Medicine</li>
+                                <li>Preventive Care & Immunizations</li>
+                                <li>Developmental Pediatrics</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Lee -->
+                <div id="dr-lee" class="doctor-detail-section">
+                    <div class="doctor-profile-card">
+                        <img src="assets/doctors/doctor5.png" alt="Dr. Robert Lee" class="doctor-profile-image">
+                        <div class="doctor-profile-info">
+                            <h3>Dr. Robert Lee</h3>
+                            <span class="specialty">Oncology Specialist</span>
+                            <div class="doctor-social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-full-info">
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-user-md"></i> Biography</h4>
+                            <p>Dr. Robert Lee is a leading oncologist known for his expertise in personalized cancer
+                                treatment. He combines cutting-edge therapies with compassionate care to support
+                                patients throughout their cancer journey. Dr. Lee is actively involved in clinical
+                                research to advance cancer treatment options.</p>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>MD, Duke University School of Medicine</li>
+                                <li>Residency in Internal Medicine, Yale New Haven Hospital</li>
+                                <li>Fellowship in Medical Oncology, MD Anderson Cancer Center</li>
+                                <li>Board Certified in Medical Oncology</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>Solid Tumor Oncology</li>
+                                <li>Immunotherapy</li>
+                                <li>Precision Medicine</li>
+                                <li>Clinical Trials</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Davis -->
+                <div id="dr-davis" class="doctor-detail-section">
+                    <div class="doctor-profile-card">
+                        <img src="assets/doctors/doctor6.png" alt="Dr. Amanda Davis" class="doctor-profile-image">
+                        <div class="doctor-profile-info">
+                            <h3>Dr. Amanda Davis</h3>
+                            <span class="specialty">Dermatologist</span>
+                            <div class="doctor-social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-full-info">
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-user-md"></i> Biography</h4>
+                            <p>Dr. Amanda Davis is a board-certified dermatologist specializing in both medical and
+                                cosmetic dermatology. She provides expert care for a wide range of skin conditions and
+                                is dedicated to helping patients achieve healthy, radiant skin. Dr. Davis stays
+                                up-to-date with the latest advancements in dermatological treatments.</p>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>MD, UCLA David Geffen School of Medicine</li>
+                                <li>Dermatology Residency, NYU Langone Health</li>
+                                <li>Fellow, American Academy of Dermatology</li>
+                                <li>Member, American Society for Dermatologic Surgery</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+                            <ul class="doctor-credentials-list">
+                                <li>Medical Dermatology (Acne, Eczema, Psoriasis)</li>
+                                <li>Skin Cancer Screening & Treatment</li>
+                                <li>Cosmetic Procedures</li>
+                                <li>Laser Therapy</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-info-block">
+                            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare<span class="logo-plus">+</span></span>
+                    </div>
+                    <p>Providing exceptional healthcare services with compassion, expertise, and state-of-the-art
+                        technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
+                        <li><a href="services.html">Pediatrics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> contact@medicare.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, NY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/1234567890" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-text">WhatsApp</span>
+        </a>
+        <a href="tel:+1234567890" class="floating-btn phone" aria-label="Call">
+            <i class="fas fa-phone"></i>
+            <span class="btn-text">Call Us</span>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
