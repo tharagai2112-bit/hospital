@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Premium Healthcare</title>
-    <meta name="description" content="Get in touch with us for appointments, inquiries, or emergency services.">
+    <title>Book an Appointment - Premium Healthcare</title>
+    <meta name="description" content="Schedule your appointment with our expert medical professionals.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,42 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        /* Specific styles for appointment page */
+        .appointment-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--bg-light);
+        }
+
+        .appointment-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .appointment-container {
+                padding: 1.5rem;
+            }
+
+            .appointment-section {
+                padding-top: 2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -38,7 +74,7 @@
                         <li><a href="about.html" class="nav-link">About</a></li>
                         <li><a href="doctors.html" class="nav-link">Doctors</a></li>
                         <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -58,73 +94,87 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title">Contact Us</h1>
+            <h1 class="page-title">Book an Appointment</h1>
             <div class="page-breadcrumb">
-                <a href="index.html">Home</a> <span>/</span> Contact
+                <a href="index.html">Home</a> <span>/</span> Appointment
             </div>
         </div>
     </section>
 
-    <!-- Contact Content -->
-    <section class="contact" id="contact" style="padding-top: 2rem;">
+    <!-- Appointment Form Section -->
+    <section class="appointment-section">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Get In Touch</h2>
-                    <p>Have questions? We're here to help. Reach out to us through any of the following channels or fill
-                        out the form.</p>
+            <div class="appointment-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Schedule Visit</span>
+                    <h2 class="section-title">Request an Appointment</h2>
+                    <p class="section-description">Fill out the form below to schedule a consultation with our medical
+                        experts.</p>
+                </div>
 
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Full
+                                Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>contact@medicare.com</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="email" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Email
+                                Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Address</h4>
-                                <p>123 Healthcare Ave, Medical District, NY 10001</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="phone" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Phone
+                                Number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="(555) 123-4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Preferred
+                                Date</label>
+                            <input type="date" id="date" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="department"
+                                style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Department</label>
+                            <select id="department" class="form-input">
+                                <option value="">Select Department</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="orthopedics">Orthopedics</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="oncology">Oncology</option>
+                                <option value="dermatology">Dermatology</option>
+                                <option value="general">General Medicine</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="doctor"
+                                style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Preferred Doctor
+                                (Optional)</label>
+                            <select id="doctor" class="form-input">
+                                <option value="">Select Doctor</option>
+                                <option value="wilson">Dr. James Wilson</option>
+                                <option value="thompson">Dr. Sarah Thompson</option>
+                                <option value="chen">Dr. Michael Chen</option>
+                                <option value="white">Dr. Emily White</option>
+                                <option value="lee">Dr. Robert Lee</option>
+                                <option value="davis">Dr. Amanda Davis</option>
+                            </select>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-input" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-input" placeholder="Phone Number" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-input" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <label for="message" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Reason for
+                            Visit</label>
+                        <textarea id="message" class="form-input" rows="4"
+                            placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Confirm Appointment</button>
+                </form>
             </div>
         </div>
-    </section>
-
-    <!-- Map Section (Optional extra for Contact page) -->
-    <section class="map-section" style="padding-bottom: 0; padding-top: 0;">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1644262145325!5m2!1sen!2s"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <!-- Footer -->
